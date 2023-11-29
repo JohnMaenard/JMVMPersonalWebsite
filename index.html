@@ -1,0 +1,458 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Personal Webpage</title>
+    <link rel="stylesheet" href="assets/css/bootstrap.min.css">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <style>
+      .rounded-image {
+      border-radius: 50%;
+      }
+      #myVideo {
+        position: fixed;
+        right: 0;
+        bottom: 0;
+        min-width: 100%;
+        min-height: 100%;
+        width: 100%;
+        height: auto;
+        z-index: -1;
+      }
+
+      @media (max-width: 768px) {
+        #myVideo {
+          width: auto;
+          height: 100%;
+        }
+      }
+
+      .accordion-item {
+      background: transparent;
+      }
+      .socials a i.bx {
+      color: white;
+      
+      }
+      .socials a i.bx.bxl-facebook-circle {
+      font-size: 45px;
+      }
+
+      .socials a i.bx.bxl-instagram {
+      font-size: 45px;
+      }
+      a {
+      text-decoration: none;
+      }
+
+      .card {
+        min-height: 300px;
+      }
+
+      .card .img-fluid {
+        height: 40%;
+        width: 40%;
+      }   
+  </style>
+</head>
+<body>
+  
+  <video autoplay muted loop id="myVideo">
+    <source src="assets/bg.mp4" type="video/mp4" />
+  </video>
+    <!-- NavBar -->
+    <nav class="navbar navbar-expand-lg navbar-light bg-transparent">
+        <div class="container fw-bold fs-5">
+            <a class="navbar-brand text-light" href="#">Personal Webpage</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
+                aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon "></span>
+            </button>
+            <div class="collapse navbar-collapse " id="navbarSupportedContent">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                    <li class="nav-item">
+                        <a class="nav-link text-light" aria-current="page" href="#Home">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link text-light" aria-current="page" href="#aboutme">About Me</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link text-light" href="#contact">Contact</a>
+                    </li>
+                </ul>
+                <form class="d-flex" role="search">
+                    <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+                    <button class="btn btn-outline-light" type="submit">Search</button>
+                </form>
+            </div>
+        </div>
+    </nav>
+    <!-- Home -->
+    <div class="container d-flex justify-content-center align-items-center min-vh-100" id="Home">
+        <div class="row">
+            <div class="col text-center">
+                <h1 class="display-2 fw-bold text-light">Hi! Welcome</h1>
+                <h1 class="display-2 fw-bold text-light">This is My Personal Webpage</h1>
+            </div>
+        </div>
+    </div>
+
+
+    <!-- Container -->
+    <p class="h1 text-center text-light fw-bold fs-1">About Me</p>
+    <div class="container my-5 animated-section" id="aboutme">
+        <div class="row">
+            <div class="col-md-6">
+                <p class="lead mt-4 fs-2 text-light"><strong>Name:</strong><br>John Maenard V. Mirandilla</p>
+                <p class="lead fs-2 text-light"><strong>Age:</strong><br> 20 years old</p>
+                <p class="lead fs-2 text-light"><strong>School:</strong><br> Bulacan State Agricultural University</p>
+                <p class="lead fs-2 text-light"><strong>Course:</strong><br> Bachelor of Science in Information Technology</p>
+            </div>
+            <div class="col-md-6 pe-4 ps-4 ">
+                <img src="assets/yop22.png" class="img-fluid d-none d-md-block rounded-image"
+                    alt="Photo" style="max-height: 500px;">
+            </div>
+        </div>
+    </div>
+
+    
+    <!-- Education -->
+    <p class="h1 text-center text-light fw-bold fs-1">My Education History</p>
+
+<div class="container text-light text-center my-5">
+  <div class="row">
+    <div class="col-md-6">
+      <div class="card card-equal-height">
+        <div class="card-body text-center">
+          <h5 class="card-title fw-bold fs-3">Elementary School</h5>
+          <p class="card-text fs-4">Gabihan Elementary School (2009-2015)</p>
+          <img src="assets/gabihan.jpg" class="img-fluid  mx-auto rounded-image" alt="Photo">
+        </div>
+      </div>
+    </div>
+
+    <div class="col-md-6">
+      <div class="card card-equal-height">
+        <div class="card-body text-center">
+          <h5 class="card-title fw-bold fs-3">High School</h5>
+          <p class="card-text fs-4">Colegio De La Santisima Eucaristia (2015-2019)</p>
+          <img src="assets/cdlse.jpg" class="img-fluid  mx-auto rounded-image" alt="Photo">
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="row mt-5">
+    <div class="col-md-6">
+      <div class="card card-equal-height">
+        <div class="card-body text-center">
+          <h5 class = "card-title fw-bold fs-3">Senior High School</h5>
+          <p class="card-text fs-4">Saint John School (2019-2021)</p>
+          <img src="assets/sjs.jpg" class="img-fluid  mx-auto rounded-image" alt="Photo">
+        </div>
+      </div>
+    </div>
+
+    <div class="col-md-6 mb-5">
+      <div class="card card-equal-height">
+        <div class="card-body text-center">
+          <h5 class="card-title fw-bold fs-3">College</h5>
+          <p class="card-text fs-4">Bulacan State Agricultural University (2021-Present)</p>
+          <img src="assets/basc2.png" class="img-fluid mx-auto rounded-image" alt="Photo">
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+      <!-- Accordion and Cards -->
+      <p class="h1 text-center text-light fw-bold fs-1">List of Things I Like</p>
+      <div class="accordion accordion-flush animated-section" id="accordionFlushExample">
+        <div class="accordion-item">
+          <h2 class="accordion-header">
+            <button class="accordion-button collapsed bg-transparent text-light fw-bold fs-3" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseOne" aria-expanded="false" aria-controls="flush-collapseOne">
+              Anime
+            </button>
+          </h2>
+          <div id="flush-collapseOne" class="accordion-collapse collapse" data-bs-parent="#accordionFlushExample">
+            <div class="accordion-body">
+
+              <div class="container text-center">
+                <div class="row">
+                  
+                  <div class="col">
+                    <div class="card" style="width: 18rem;">
+                      <img src="assets/sao2.jpg" class="card-img-top" alt="assets/sao2.jpg" style="max-height: 20rem;">
+                      <div class="card-body text-center">
+                        <h5 class="card-title">Sword Art Online</h5>
+                        <p class="card-text text-center">SWORD ART ONLINE is the story of a multiplayer virtual-reality game that takes a deadly turn when players discover they can't escape of their own will but must play to victory or to death.</p>
+                        <a href="https://animepahe.ru/anime/4a3c5258-bc1a-ecd2-ab06-5461429ded17" class="btn btn-primary">Watch Now</a>
+                      </div>
+                    </div>
+                  </div>
+
+                  <div class="col">
+                    <div class="card mb-5" style="width: 18rem;">
+                      <img src="assets/dr.stone.jpg" class="card-img-top" alt="assets/dr.stone.jpg" style="max-height: 20rem;">
+                      <div class="card-body text-center">
+                        <h5 class="card-title">Dr.Stone</h5>
+                        <p class="card-text text-center">Dr. STONE is a serialized manga and anime series created by Riichiro Inagaki and Boichi. After a cataclysm causes everyone in the world to turn to stone, two boys awaken and take on the daunting task of trying to revive the rest of humanity.</p>
+                        <a href="https://animepahe.ru/anime/5128b1ca-32c4-977a-c9b0-7078eae07ca3" class="btn btn-primary">Watch Now</a>
+                      </div>
+                    </div>
+                  </div>
+
+                  <div class="col">
+                    <div class="card" style="width: 18rem;">
+                      <img src="assets/april.jpg" class="card-img-top" alt="assets/april.jpg" style="max-height: 20rem;">
+                      <div class="card-body text-center">
+                        <h5 class="card-title">Your Lie in April</h5>
+                        <p class="card-text text-center">Your Lie in April is an anime series about a young musician who finds romance. Former piano prodigy Kousei is living a somewhat uninspired life, until he meets Kaori, a free-spirited multi-instrumentalist. </p>
+                        <a href="https://animepahe.ru/anime/aec5ecfe-9181-4bf1-3ea5-488455040bd1" class="btn btn-primary">Watch Now</a>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                
+                  <div class="row">
+                  <div class="col">
+                    <div class="card" style="width: 18rem;">
+                      <img src="assets/Bleach.png" class="card-img-top" alt="assets/Bleach.png" style="max-height: 20rem;">
+                      <div class="card-body text-center">
+                        <h5 class="card-title">Bleach</h5>
+                        <p class="card-text text-center">The adventures of Ichigo Kurosaki after he obtains the powers of a Soul Reaper a death personification similar to the Grim Reaper from another Soul Reaper, Rukia Kuchiki.</p>
+                        <a href="https://animepahe.ru/anime/0e05a365-a2ea-7169-d51a-90bd550bf024" class="btn btn-primary">Watch Now</a>
+                      </div>
+                    </div>
+                  </div>
+
+                  <div class="col">
+                    <div class="card" style="width: 18rem;">
+                      <img src="assets/rent.jpg" class="card-img-top" alt="assets/rent.jpg" style="max-height: 20rem;">
+                      <div class="card-body text-center">
+                        <h5 class="card-title">Rent a Girlfriend</h5>
+                        <p class="card-text text-center">Kazuya following a painful breakup with his girlfriend, Mami Nanami, he decides to rent a girlfriend named Chizuru Mizuhara. He soon finds himself in situations where he has to continue renting Chizuru to keep up appearances with his family and friends, and he eventually falls in love with her.</p>
+                        <a href="https://animepahe.ru/anime/6a3762a0-0e7e-667d-d5a2-1904a65df126" class="btn btn-primary">Watch Now</a>
+                      </div>
+                    </div>
+                  </div>
+
+                  <div class="col">
+                    <div class="card" style="width: 18rem;">
+                      <img src="assets/psycho.png" class="card-img-top" alt="assets/psycho.png" style="max-height: 20rem;">
+                      <div class="card-body text-center">
+                        <h5 class="card-title">Psycho Pass</h5>
+                        <p class="card-text text-center">The series takes place in a dystopian 22nd-century Japan where it is possible to instantaneously measure and quantify a person's propensity towards criminality using a cymatic scanner. </p>
+                        <a href="https://animepahe.ru/anime/fdcf58e7-1c79-4617-dd3e-c9ac9ae4faed" class="btn btn-primary">Watch Now</a>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+            </div>
+          </div>
+        </div>
+        <div class="accordion-item">
+          <h2 class="accordion-header">
+            <button class="accordion-button collapsed bg-transparent text-light fw-bold fs-3" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseTwo" aria-expanded="false" aria-controls="flush-collapseTwo">
+              Food
+            </button>
+          </h2>
+          <div id="flush-collapseTwo" class="accordion-collapse collapse" data-bs-parent="#accordionFlushExample">
+            <div class="accordion-body">
+              
+              <div class="container text-center">
+                <div class="row">
+                  
+                  <div class="col">
+                    <div class="card" style="width: 18rem;">
+                      <img src="assets/sisig.jpg" class="card-img-top" alt="assets/sisig.jpg" style="max-height: 10rem;">
+                      <div class="card-body text-center">
+                        <h5 class="card-title">Sisig</h5>
+                        <p class="card-text text-center">Sisig is a popular Filipino dish known for its savory, spicy, and flavorful qualities. It is traditionally made from chopped and grilled pig's face, ears, and liver, although there are variations that use other cuts of meat or seafood. The dish is often served on a sizzling hot plate, making it visually and aromatically appealing.</p>
+                        
+                      </div>
+                    </div>
+                  </div>
+
+                  <div class="col">
+                    <div class="card" style="width: 18rem;">
+                      <img src="assets/chicken.jpg" class="card-img-top" alt="assets/chicken.jpg" style="max-height: 20rem;">
+                      <div class="card-body text-center">
+                        <h5 class="card-title">Ginataang Manok</h5>
+                        <p class="card-text text-center">Ginataang Manok is a Filipino chicken dish cooked with coconut milk (ginataan in Tagalog) and various ingredients that give it a rich and creamy flavor. This dish is a popular and comforting Filipino recipe that's often prepared in different regions of the Philippines.</p>
+                        
+                      </div>
+                    </div>
+                  </div>
+
+                  <div class="col">
+                    <div class="card mb-5" style="width: 18rem;">
+                      <img src="assets/bicol.jpg" class="card-img-top" alt="assets/bicol.jpg" style="max-height: 20rem;">
+                      <div class="card-body text-center">
+                        <h5 class="card-title">Bicol Express</h5>
+                        <p class="card-text text-center">Bicol Express is a popular Filipino dish known for its spicy and creamy flavors. It is primarily made with chili peppers, coconut milk, and various ingredients that can include shrimp, pork, or fish. The dish originates from the Bicol region in the Philippines, which is known for its love of spicy food.</p>
+                        
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                
+                  <div class="row">
+                  <div class="col">
+                    <div class="card" style="width: 18rem;">
+                      <img src="assets/curry.jpg" class="card-img-top" alt="assets/curry.png" style="max-height: 20rem;">
+                      <div class="card-body text-center">
+                        <h5 class="card-title">Chicken Curry</h5>
+                        <p class="card-text text-center">Chicken curry is a popular and flavorful dish found in various cuisines around the world, with distinct variations in ingredients and preparation methods depending on the region. At its core, chicken curry is a dish featuring chicken pieces cooked in a spiced and often creamy sauce.</p>
+                        
+                      </div>
+                    </div>
+                  </div>
+
+                  <div class="col">
+                    <div class="card" style="width: 18rem;">
+                      <img src="assets/siopao.png" class="card-img-top" alt="assets/siopao.png" style="max-height: 14rem;">
+                      <div class="card-body text-center">
+                        <h5 class="card-title">Siopao</h5>
+                        <p class="card-text text-center">Siopao, also known as "steamed buns" or "bao," is a popular Filipino snack or street food. It consists of a soft, fluffy, and white steamed bun filled with various savory or sweet fillings. Siopao is a beloved food in the Philippines and can be found in many local bakeries, convenience stores, and food stalls.</p>
+                        
+                      </div>
+                    </div>
+                  </div>
+
+                  <div class="col">
+                    <div class="card" style="width: 18rem;">
+                      <img src="assets/pares.jpg" class="card-img-top" alt="assets/pares.jpg" style="max-height: 20rem;">
+                      <div class="card-body text-center">
+                        <h5 class="card-title">Beef Pares</h5>
+                        <p class="card-text text-center">Beef pares is a popular Filipino dish known for its savory, sweet, and beefy flavors. The name "pares" is derived from the Filipino word for "pair," as this dish is traditionally served as a combination of beef stew and a side of garlic-fried rice. It's a hearty and comforting meal that's often enjoyed in eateries and food stalls in the Philippines. </p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+            </div>
+          </div>
+        </div>
+        <div class="accordion-item">
+          <h2 class="accordion-header">
+            <button class="accordion-button collapsed bg-transparent text-light fw-bold fs-3" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseThree" aria-expanded="false" aria-controls="flush-collapseThree">
+              Sports/Games
+            </button>
+          </h2>
+          <div id="flush-collapseThree" class="accordion-collapse collapse" data-bs-parent="#accordionFlushExample">
+            <div class="accordion-body">
+              
+              <div class="container text-center">
+                <div class="row">
+                  
+                  <div class="col">
+                    <div class="card" style="width: 18rem;">
+                      <img src="assets/basketball.jpg" class="card-img-top" alt="assets/basketball.jpg" style="max-height: 20rem;">
+                      <div class="card-body text-center">
+                        <h5 class="card-title">Basketball</h5>
+                        <p class="card-text text-center">Basketball is a popular team sport played with two teams, each consisting of five players on the court at a time. The primary objective of the game is to score points by shooting a ball through the opponent's hoop, which is an elevated basket with a net. The team with the most points at the end of the game wins.</p>
+                        
+                      </div>
+                    </div>
+                  </div>
+
+                  <div class="col">
+                    <div class="card mb-5" style="width: 18rem;">
+                      <img src="assets/volleyball2.jpg" class="card-img-top" alt="assets/volleyball.jpg" style="max-height: 20rem;">
+                      <div class="card-body text-center">
+                        <h5 class="card-title">Volleyball</h5>
+                        <p class="card-text text-center">Volleyball is a team sport that is played by two teams on a rectangular court divided by a net. The primary objective of the game is to score points by successfully sending the ball over the net and into the opponent's court in a way that it cannot be returned effectively. Volleyball is known for its fast-paced and dynamic nature and is played both indoors and on beaches, with slight variations in the rules for each version.</p>
+                        
+                      </div>
+                    </div>
+                  </div>
+
+                  <div class="col">
+                    <div class="card" style="width: 18rem;">
+                      <img src="assets/ml.png" class="card-img-top" alt="assets/ml.png" style="max-height: 20rem;">
+                      <div class="card-body text-center">
+                        <h5 class="card-title">Mobile Legends Bang Bang</h5>
+                        <p class="card-text text-center">Mobile Legends: Bang Bang, often simply referred to as Mobile Legends, is a popular multiplayer online battle arena (MOBA) game developed and published by Moonton. It is primarily designed for mobile devices and is available on both Android and iOS platforms. The game has gained immense popularity, particularly in the mobile gaming community, and is played by millions of people worldwide. </p>
+                        
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+    
+            </div>
+          </div>
+        </div>
+      </div>
+      
+<!-- Contact Info -->
+<p class="h1 text-center text-light fw-bold fs-1 mt-5">Contact Me</p>
+<div class="container mt-5 text-light fs-4 animated-section" id="contact">
+  <div class="row">
+      <div class="col-md-6">
+          <form>
+              <div class="mb-3">
+                  <label for="name" class="form-label">Name</label>
+                  <input type="text" class="form-control" id="name" placeholder="Your Name">
+              </div>
+              <div class="mb-3">
+                  <label for="email" class="form-label">Email</label>
+                  <input type="email" class="form-control" id="email" placeholder="Your Email">
+              </div>
+              <div class="mb-3">
+                  <label for="message" class="form-label">Message</label>
+                  <textarea class="form-control" id="message" rows="5" placeholder="Your Message"></textarea>
+              </div>
+              <button type="submit" class="btn btn-primary">Submit</button>
+          </form>
+      </div>
+      <div class="col-md-6 mb-5">
+          <h2>Contact Information</h2>
+          <p><strong>Address:</strong> <br> 346, Purok 7 , Gabihan San Ildefonso, Bulacan</p>
+          <p><strong>Email:</strong><br> johnmaenardmirandilla.basc@gmail.com</p>
+          <p><strong>Phone:</strong><br> 0991 114 0831</p>
+          <p><strong>Socials:</strong><br>
+            <div class="socials mb-5">
+            <a href="https://www.facebook.com/jmvm05">
+              <i class='bx bxl-facebook-circle'></i>
+          </a>
+          <a href="https://www.instagram.com/jmmirandilla05/">
+              <i class='bx bxl-instagram'></i>
+          </a>
+        </p>
+      </div>
+      </div>
+  </div>
+</div>
+
+    <script>
+    function isElementInViewport(el) {
+      const rect = el.getBoundingClientRect();
+      return (
+        rect.top >= 0 &&
+        rect.left >= 0 &&
+        rect.bottom <= (window.innerHeight || document.documentElement.clientHeight) &&
+        rect.right <= (window.innerWidth || document.documentElement.clientWidth)
+      );
+    }
+    function revealElementsOnScroll() {
+      const animatedSections = document.querySelectorAll('.animated-section');
+      animatedSections.forEach(section => {
+        if (isElementInViewport(section)) {
+          section.classList.add('reveal');
+        }
+      });
+    }
+    window.addEventListener('scroll', revealElementsOnScroll);
+    window.addEventListener('load', revealElementsOnScroll);
+    </script>
+    <script src="../assets/js/bootstrap.min.js"></script>
+    <script src="https://unpkg.com/boxicons@2.1.4/dist/boxicons.js"></script>
+</body>
+</html>
