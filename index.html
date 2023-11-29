@@ -431,27 +431,7 @@
   </div>
 </div>
 
-    <script>
-    function isElementInViewport(el) {
-      const rect = el.getBoundingClientRect();
-      return (
-        rect.top >= 0 &&
-        rect.left >= 0 &&
-        rect.bottom <= (window.innerHeight || document.documentElement.clientHeight) &&
-        rect.right <= (window.innerWidth || document.documentElement.clientWidth)
-      );
-    }
-    function revealElementsOnScroll() {
-      const animatedSections = document.querySelectorAll('.animated-section');
-      animatedSections.forEach(section => {
-        if (isElementInViewport(section)) {
-          section.classList.add('reveal');
-        }
-      });
-    }
-    window.addEventListener('scroll', revealElementsOnScroll);
-    window.addEventListener('load', revealElementsOnScroll);
-    </script>
+
     <script src="../assets/js/bootstrap.min.js"></script>
     <script src="https://unpkg.com/boxicons@2.1.4/dist/boxicons.js"></script>
 </body>
